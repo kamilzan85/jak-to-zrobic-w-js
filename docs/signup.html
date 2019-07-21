@@ -28,6 +28,9 @@
     ============================================================-->  
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/purecookie.css" async />
+    <script src="js/purecookie.js" async></script>
+
 </head>
 
 <body>
@@ -102,12 +105,13 @@
 					<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
 					<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
 				</p>
-				<p class="signin button"> 
+                <p>Please confirm <a href="#">Terms and conditions</a> <input id="terms" name="terms" required="required" type="checkbox" style="margin: 0px 0px 2px 4px"/></p>
+                <p class="signin button">
 					<a href="registrationconfirmed.html" class="btn" type="button">Submit</a>
 				</p>
 				<p class="change_link">  
 					Already a member ?
-					<a href="#tologin" class="to_register"> Go and log in </a>
+					<a href="signin.html" class="to_register"> Go and log in </a>
 				</p>
 			</form>
 		</div>

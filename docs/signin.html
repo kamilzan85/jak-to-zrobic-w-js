@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Protractor workshop | Service</title>
+  <title>Protractor workshop | Sign up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -24,14 +24,12 @@
   <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="img/favicon.png">
   
-
-
     <!-- SCRIPT 
     ============================================================-->  
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/purecookie.css" async />
-	<script src="js/purecookie.js" async></script>
+    <link rel="stylesheet" type="text/css" href="css/purecookie.css" async />
+    <script src="js/purecookie.js" async></script>
 
 </head>
 
@@ -85,103 +83,42 @@
 
 
 <div class="container">
-	  <!--PAGE TITLE-->
 
-	<div class="row">
+	<div class="row feature-box">
 		<div class="span12">
-			<div class="page-header">
-				<h1>Services</h1>
-			</div>
+		<div id="register" class="animate form">
+			<form  action="mysuperscript.php" autocomplete="on"> 
+				<h1>Log in </h1>
+				<p> 
+					<label for="usernamesignin" class="uname" data-icon="u">Your username</label>
+					<input id="usernamesignin" name="usernamesignin" required="required" type="text" placeholder="mysuperusername690" />
+				</p>
+				<p> 
+					<label for="passwordsignin" class="youpasswd" data-icon="p">Your password </label>
+					<input id="passwordsignin" name="passwordsignin" required="required" type="text" />
+				</p>
+				<p class="signin button">
+					<a href="admin.html" class="btn" id="admin" type="button">Submit</a>
+				</p>
+			</form>
 		</div>
 	</div>
-
-  <!-- /. PAGE TITLE-->
-
-	<div class="row">
-		<div class="span6">
-		<div class="media">
-				 <a href="#" class="pull-left"><img src="img/icon-service1.png" class="media-object" alt='' /></a>
-				<div class="media-body">
-					<h4 class="media-heading">Nested media heading 1</h4>
-					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.	
-					</p>
-					<a href="#" class="btn" type="button">Button</a>
-
-
-				</div>
-			</div>
-		</div>			
-
-
-		<div class="span6">
-
-		<div class="media">
-				 <a href="#" class="pull-left"><img src="img/icon-service2.png" class="media-object" alt='' /></a>
-				<div class="media-body">
-					<h4 class="media-heading">Nested media heading 2</h4>
-					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-					<a href="#" class="btn" type="button">Button</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="span6">
-		<div class="media">
-				 <a href="#" class="pull-left"><img src="img/icon-service3.png" class="media-object" alt='' /></a>
-				<div class="media-body">
-					<h4 class="media-heading">Nested media heading 3</h4>
-					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-					<a href="#" class="btn" type="button">Button</a>
-				</div>
-			</div>
-		</div>
-
-
-		
-		<div class="span6">
-		<div class="media">
-				 <a href="#" class="pull-left"><img src="img/icon-service4.png" class="media-object" alt='' /></a>
-				<div class="media-body">
-					<h4 class="media-heading">Nested media heading 4</h4>
-					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-					<a href="#" class="btn" type="button">Button</a>
-				</div>
-			</div>
-
-
-		</div>		
-
-		<div class="span6">
-		<div class="media">
-				 <a href="#" class="pull-left"><img src="img/icon-service5.png" class="media-object" alt='' /></a>
-				<div class="media-body">
-					<h4 class="media-heading">Nested media heading 5</h4>
-					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-					<a href="#" class="btn" type="button">Button</a>
-				</div>
-			</div>
-
-
-		</div>		
-
-		<div class="span6">
-		<div class="media">
-				 <a href="#" class="pull-left"><img src="img/icon-service6.png" class="media-object" alt='' /></a>
-				<div class="media-body">
-					<h4 class="media-heading">Nested media heading 6</h4>
-					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-					<a href="#" class="btn" type="button">Button</a>
-				</div>
-			</div>
-
-
-		</div>
-
-	</div>
+    <script>
+        if (window.addEventListener) {
+            document.addEventListener('click', function (e) {
+                var lnk = document.getElementById('admin');
+                var username=document.getElementById("usernamesignin").value;
+                var password=document.getElementById("passwordsignin").value;
+                if (e.target.id === lnk.id && !(username === "admin" && password === "admin")) {
+                    lnk.href="signin-incorrect.html"
+                }
+            });
+        }
+    </script>
 </div>
 
 
-
+</div>
 <!--Footer
 ==========================-->
 
