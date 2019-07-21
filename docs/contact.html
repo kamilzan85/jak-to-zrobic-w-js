@@ -30,6 +30,9 @@
     ============================================================-->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/purecookie.css" async />
+    <script src="js/purecookie.js" async></script>
+
 
     <!--GOOGLE MAP-->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
@@ -200,7 +203,7 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
       if (!empty) {
 	      setTimeout( function(){
 		$('span.span6 form').remove();
-          	$('span.span6.message').append("<h3>Your message has been sent.</h3>");
+          	$('span.span6.message').append("<h4 class='alert alert-success'>Your message has been sent.</h4>");
 	      }, 5000);
       }
   });
